@@ -2,18 +2,67 @@ doctype
 html
 	head
 		title Leeran Setton - Developer
+		style
+			include ../style/style.css
+	body.flex-container.flex-container__centered
+		.header-image
+			// img(src="../media/logo.jpg")
+		.content.flex-container.flex-container__centered
+			.header
+				.header-text
+					p Hey, I'm
+					p.name Leeran Setton
+					p DEVELOPER
 
-	body
-		.header
-			.header-image
-				// img(src="./media/logo.jpg")
-			.header-text
-				p.normal-text Hey, I'm
-				p.name Leeran Setton
-				p.normal-text DEVELOPER
-		
-		.bio
-			p.bio-subheading I'm a creative backend developer who also knows web developement.
-			.bio-headshot
-				// img(src="./media/headshot.jpg")
-			p.bio-text
+			.bio.flex-container
+				h1.heading Profile
+				h2.subheading.divider I'm a creative backend developer who also knows web development.
+				.bio--content.flex-container.flex-container__row
+					.bio-headshot.flex-container.flex-container__centered
+						img.bio-headshot--img(src="../media/headshot.png")
+					p.bio--about-me
+						| Starting in the IDF as a software developer in Java and Oracle DB made me grow into backend development. Once I was release from the army, I joined 
+						| an aspiring startup in Israel that was based in Santa Monica, CA. There I started as a backend developer in a scalable, high-availability Java architecture. 
+						| After a few months, I was asked to help the web team, that's where I learned everything I know today about web development. A year after I started, I was asked to 
+						| relocate to the Santa Monica office, to which I agreed. 3 Months later I left and joined another company in the porn industry, there I'm a backend engineer working 
+						| in PHP, JavaScript, NodeJS, GraphQL, and more.
+
+			.experience.flex-container
+				h1.heading Experience
+				h2.subheading.divider 
+					| "By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; 
+					| and third by experience, which is the bitterest." </br>
+					| - Confucius
+				#education.experience-list.flex-container
+					h3.experience-list-title Education
+					.experience-list-item.flex-container.flex-container__row
+						.experience-list-item--where-and-when
+							h3.place Mamram IDF Computer Science Program
+							p.time March 2009 - September 2009
+						.experience-list-item--what
+							h4.item-title Programming course
+							p.exp-desc Studied there basic and progressive programing skills, c++, c#, Java, SQL, security, OS, architecture and design, working in teams, and source control.
+
+			.experience.flex-container
+				#jobs.experience-list.flex-container
+					h3.experience-list-title Career
+					.experience-list-item.flex-container.flex-container__row
+						.experience-list-item--where-and-when
+							h3.place IDF
+							p.time November 2009 - October 2012
+						.experience-list-item--what
+							h4.item-title Software Developer
+							p.exp-desc 
+							| Designed, Developed and maintained a legacy information system using Java, Oracle SQL, XML, Hibernate and SQL Tuning. I used Oracle Reports and Swing for GUI.
+							| As a software developer I worked with a wide variety of people. Starting with My manager and the big development team (5 developers), 
+							| through our customers, users and architects.
+					.experience-list-item.flex-container.flex-container__row
+						.experience-list-item--where-and-when
+							h3.place IDF
+							p.time April 2013 - July 2013
+						.experience-list-item--what
+							h4.item-title Software Integrator
+							p.exp-desc 
+							| While managing a software development team, I Designed and developed a module in a legacy information system, giving the system new dynamic abilities and by
+							| that saving a lot of time in future developing. As part of being an integrator, I was in charge of the whole testing phase of a version, and worked along with
+							| colleague software development team leaders and a QA team leader. We kept track of our progress using CRM and CCB committees I managed.

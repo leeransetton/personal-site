@@ -1,1 +1,71 @@
-<!DOCTYPE html><html><head><title>Leeran Setton - Developer</title></head><body><div class="header"><div class="header-image"><!-- img(src="./media/logo.jpg")--></div><div class="header-text"><p class="normal-text">Hey, I'm</p><p class="name">Leeran Setton</p><p class="normal-text">DEVELOPER</p></div></div><div class="bio"><p class="bio-subheading">I'm a creative backend developer who also knows web developement.</p><div class="bio-headshot"><!-- img(src="./media/headshot.jpg")--></div><p class="bio-text"></p></div></body></html>
+<!DOCTYPE html><html><head><title>Leeran Setton - Developer</title><style>p {
+  font-size: 15px;
+  line-height: 1.64; }
+
+body {
+  background-color: lightblue; }
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .flex-container__centered {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+  .flex-container__row {
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+
+.content {
+  width: 70%;
+  font-family: "Open Sans", sans-serif; }
+
+.divider {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px; }
+
+.heading {
+  text-align: center;
+  color: orange; }
+
+.subheading {
+  text-align: center; }
+
+.bio--about-me {
+  flex: 2;
+  order: 1; }
+
+.bio-headshot {
+  flex: 1;
+  order: 2; }
+  .bio-headshot--img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px; }
+
+.experience-list-title {
+  color: orange; }
+
+.experience-list-item--where-and-when {
+  flex-basis: 30%;
+  order: 1; }
+.experience-list-item--what {
+  flex-basis: 67%;
+  order: 2; }
+
+/*# sourceMappingURL=style.css.map */
+</style></head><body class="flex-container flex-container__centered"><div class="header-image"><!-- img(src="../media/logo.jpg")--></div><div class="content flex-container flex-container__centered"><div class="header"><div class="header-text"><p>Hey, I'm</p><p class="name">Leeran Setton</p><p>DEVELOPER</p></div></div><div class="bio flex-container"><h1 class="heading">Profile</h1><h2 class="subheading divider">I'm a creative backend developer who also knows web development.</h2><div class="bio--content flex-container flex-container__row"><div class="bio-headshot flex-container flex-container__centered"><img class="bio-headshot--img" src="../media/headshot.png"></div><p class="bio--about-me">Starting in the IDF as a software developer in Java and Oracle DB made me grow into backend development. Once I was release from the army, I joined 
+an aspiring startup in Israel that was based in Santa Monica, CA. There I started as a backend developer in a scalable, high-availability Java architecture. 
+After a few months, I was asked to help the web team, that's where I learned everything I know today about web development. A year after I started, I was asked to 
+relocate to the Santa Monica office, to which I agreed. 3 Months later I left and joined another company in the porn industry, there I'm a backend engineer working 
+in PHP, JavaScript, NodeJS, GraphQL, and more.</p></div></div><div class="experience flex-container"><h1 class="heading">Experience</h1><h2 class="subheading divider"> "By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; 
+and third by experience, which is the bitterest." </br>
+- Confucius</h2><div class="experience-list flex-container" id="education"><h3 class="experience-list-title">Education</h3><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">Mamram IDF Computer Science Program</h3><p class="time">March 2009 - September 2009</p></div><div class="experience-list-item--what"><h4 class="item-title">Programming course</h4><p class="exp-desc">Studied there basic and progressive programing skills, c++, c#, Java, SQL, security, OS, architecture and design, working in teams, and source control.</p></div></div></div></div><div class="experience flex-container"><div class="experience-list flex-container" id="jobs"><h3 class="experience-list-title">Career</h3><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">IDF</h3><p class="time">November 2009 - October 2012</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Developer</h4><p class="exp-desc"> </p>Designed, Developed and maintained a legacy information system using Java, Oracle SQL, XML, Hibernate and SQL Tuning. I used Oracle Reports and Swing for GUI.
+As a software developer I worked with a wide variety of people. Starting with My manager and the big development team (5 developers), 
+through our customers, users and architects.</div></div><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">IDF</h3><p class="time">April 2013 - July 2013</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Integrator</h4><p class="exp-desc"> </p>While managing a software development team, I Designed and developed a module in a legacy information system, giving the system new dynamic abilities and by
+that saving a lot of time in future developing. As part of being an integrator, I was in charge of the whole testing phase of a version, and worked along with
+colleague software development team leaders and a QA team leader. We kept track of our progress using CRM and CCB committees I managed.</div></div></div></div></div></body></html>
