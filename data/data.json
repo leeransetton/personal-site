@@ -1,0 +1,38 @@
+{
+	"skills":
+	[
+		{"name": "Java", "score": 5},
+		{"name": "Javascript", "score": 5},
+		{"name": "React.js", "score": 5},
+		{"name": "Redux", "score": 5},
+
+		{"name": "SQL", "score": 5},
+		{"name": "Object Oriented Design and Programming", "score": 5},
+		{"name": "SQL Tuning", "score": 5},
+		{"name": "Oracle DB", "score": 5},
+		
+		{"name": "MySQL", "score": 5},
+		{"name": "Oracle PL/SQL", "score": 5},
+		{"name": "GraphQL", "score": 5},
+		{"name": "BEM", "score": 5},
+
+		{"name": "Docker", "score": 4},
+		{"name": "CSS3", "score": 4},
+		{"name": "HTML5", "score": 4},
+		{"name": "ElasticSearch", "score": 4},
+		{"name": "Node.js", "score": 4},
+		{"name": "Talend", "score": 4},
+		{"name": "PostgreSQL", "score": 4},
+
+
+		{"name": "PHP", "score": 3},
+
+		{"name": "Android", "score": 2},
+
+	],
+	"langs":
+	[
+		{"name": "Hebrew", "score": 5},
+		{"name": "English", "score": 5}
+	]
+}

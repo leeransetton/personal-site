@@ -2,18 +2,18 @@ doctype
 html
 	head
 		title Leeran Setton - Developer
-		style
+		script(src='../scripts/scripts.js')
+		link(rel="shortcut icon" type="image/x-icon" href="../media/favicon.ico")
+		link(rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css")
+		style 
 			include ../style/style.css
-	body.flex-container.flex-container__centered
-		.header-image
-			// img(src="../media/logo.jpg")
+	body.flex-container.flex-container__centered(onload="init()")
+		img#logo(src="../media/logo.jpg")
+		.header-text#header-text.flex-container.flex-container__centered
+			p Hey, I'm
+			p.name Leeran Setton
+			p DEVELOPER
 		.content.flex-container.flex-container__centered
-			.header
-				.header-text
-					p Hey, I'm
-					p.name Leeran Setton
-					p DEVELOPER
-
 			.bio.flex-container
 				h1.heading Profile
 				h2.subheading.divider I'm a creative backend developer who also knows web development.
@@ -34,22 +34,24 @@ html
 					| and third by experience, which is the bitterest." </br>
 					| - Confucius
 				#education.experience-list.flex-container
-					h3.experience-list-title Education
+					h3.list-title Education
 					.experience-list-item.flex-container.flex-container__row
 						.experience-list-item--where-and-when
 							h3.place Mamram IDF Computer Science Program
 							p.time March 2009 - September 2009
+							p.location Israel
 						.experience-list-item--what
 							h4.item-title Programming course
 							p.exp-desc Studied there basic and progressive programing skills, c++, c#, Java, SQL, security, OS, architecture and design, working in teams, and source control.
 
 			.experience.flex-container
 				#jobs.experience-list.flex-container
-					h3.experience-list-title Career
+					h3.list-title Career
 					.experience-list-item.flex-container.flex-container__row
 						.experience-list-item--where-and-when
-							h3.place IDF
+							h3.place Israel Defense Forces
 							p.time November 2009 - October 2012
+							p.location Israel
 						.experience-list-item--what
 							h4.item-title Software Developer
 							p.exp-desc 
@@ -58,11 +60,252 @@ html
 							| through our customers, users and architects.
 					.experience-list-item.flex-container.flex-container__row
 						.experience-list-item--where-and-when
-							h3.place IDF
+							h3.place Israel Defense Forces
 							p.time April 2013 - July 2013
+							p.location Israel
 						.experience-list-item--what
 							h4.item-title Software Integrator
 							p.exp-desc 
 							| While managing a software development team, I Designed and developed a module in a legacy information system, giving the system new dynamic abilities and by
 							| that saving a lot of time in future developing. As part of being an integrator, I was in charge of the whole testing phase of a version, and worked along with
 							| colleague software development team leaders and a QA team leader. We kept track of our progress using CRM and CCB committees I managed.
+					.experience-list-item.flex-container.flex-container__row
+						.experience-list-item--where-and-when
+							h3.place Israel Defense Forces
+							p.time July 2013 - May 2015
+							p.location Israel
+						.experience-list-item--what
+							h4.item-title Software Development Team Lead and Developer
+							p.exp-desc 
+							| As a software team leader, I managed a software development team that uses Java and C++ on Windows platform. Part of my job was to plan development schedules,
+							| analyze, make code and design reviews, plan tests, and make sure version control stays as clean as possible. I designed and developed business logic,
+							| algorithms, and built installations by using a wide variety of hardware using Java and Win32 - LTO, CD, magnetic medias, smart cards and their drives. One
+							| major project was migrating the systems to Windows 7. In this job I got to work with costumers, users and external companies.
+					.experience-list-item.flex-container.flex-container__row
+						.experience-list-item--where-and-when
+							h3.place Whipclip
+							p.time August 2015 - March 2017
+							p.location Santa Monica, CA
+						.experience-list-item--what
+							h4.item-title Software Development Team Lead and Developer
+							p.exp-desc 
+							| In Whipclip I designed and developed backend and web components using Java and JavaScript (React and Redux). Projects I was solely developing include 
+							| EPG using TMS api, clipping tool, suppression tool, sharing clips to social networks and content management system. Also used Talend for data fetching 
+							| and processing. I needed to learn PHP, JavaScript and CSS on the fly. Discover and learn external interfaces and packages both in Java, JavaScript, and 
+							| PHP. Since Whipclip had 2 offices, one in Israel and another one in Santa Monica, I needed to work with teams in Israel, USA, and France in full 
+							| cooperation. The persistence solutions we used in Whipclip were RDBMS (PostgreSQL, and MySQL), NoSQL (Redis, and ElasticSearch), and Kafka message bus. 
+							| The environment ran in Docker on Amazon AWS, and deployed using Jenkins that is connected both to Jira and BitBucket. As a side project, I suggested, 
+							| designed and developed a Kodi plugin for the company in Python.
+
+			.abillities.flex-container
+				h1.heading Abillities
+				h2.subheading.divider 
+					| "Learning how to learn is life's most important skill." </br>
+					| - Tony Buzan
+				#skills.abilities-list-section.flex-container
+					h3.list-title Skills
+					.abilities-section.flex-container.flex-container__row
+						ul.abilities-list.flex-container
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Java
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Javascript
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name React
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Redux
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Object Oriented Design and Programming
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Oracle DB
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name SQL
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name SQL Tuning
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name MySQL
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Oracle PL/SQL
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name GraphQL
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+						ul.abilities-list.flex-container
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name BEM
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name CSS3
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name HTML5
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name ElasticSearch
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Node.js
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name PostgreSQL
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Docker
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Talend
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name PHP
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Android
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star-o
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+				#langs.abilities-list-section.flex-container
+					h3.list-title Languages
+					.abilities-section.flex-container.flex-container__row
+						ul.abilities-list.flex-container
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name English
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+						ul.abilities-list.flex-container
+							li.abillity-item.flex-container.flex-container__row
+								p.ability-name Hebrew
+								.ability-stars.flex-container.flex-container__row.flex-container__centered
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+									i.ability-star.fa.fa-star
+			.contact.flex-container
+				h1.heading Contact
+				h2.subheading.divider 
+					| "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed." </br>
+					| - Carl Jung 
+				.contact-section.flex-container.flex-container__row
+					ul.contact-list.flex-container.flex-container__row.flex-container__centered
+						li.contact-item.flex-container
+							a.linkedin(href="https://www.linkedin.com/in/leeran-setton-ba200b77/" target="_blank")
+						li.contact-item.flex-container
+							a.github(href="https://github.com/leeransetton" target="_blank")
+						li.contact-item.flex-container
+							a.mail(href="mailto:leeransetton@gmail.com" target="_blank")

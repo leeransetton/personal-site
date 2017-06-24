@@ -1,15 +1,22 @@
-<!DOCTYPE html><html><head><title>Leeran Setton - Developer</title><style>p {
+<!DOCTYPE html><html><head><title>Leeran Setton - Developer</title><script src="../scripts/scripts.js"></script><link rel="shortcut icon" type="image/x-icon" href="../media/favicon.ico"><link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css"><style> p {
   font-size: 15px;
-  line-height: 1.64; }
+  line-height: 1.64;
+  color: black; }
 
 body {
-  background-color: lightblue; }
+  background-color: lightblue;
+  margin: 0;
+  overflow-x: hidden; }
+
+ul {
+  padding: 0; }
 
 .flex-container {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
   .flex-container__centered {
     -webkit-align-items: center;
     align-items: center;
@@ -18,6 +25,20 @@ body {
   .flex-container__row {
     -webkit-flex-direction: row;
     flex-direction: row; }
+
+.header-text {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .header-text p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 75px;
+    margin: 0; }
+
+.location:before {
+  font-family: FontAwesome;
+  content: "\f041\ "; }
 
 .content {
   width: 70%;
@@ -47,7 +68,7 @@ body {
     width: 200px;
     border-radius: 200px; }
 
-.experience-list-title {
+.list-title {
   color: orange; }
 
 .experience-list-item--where-and-when {
@@ -57,15 +78,73 @@ body {
   flex-basis: 67%;
   order: 2; }
 
+.abilities-section {
+  justify-content: space-between; }
+
+.abilities-list {
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 45%; }
+
+.ability-name {
+  flex: 3;
+  margin: 0; }
+
+.ability-stars {
+  flex: 1;
+  justify-content: flex-end !important; }
+
+.contact-list a:link {
+  color: black;
+  text-decoration: none; }
+.contact-list a:visited {
+  color: black;
+  text-decoration: none; }
+.contact-list a:hover {
+  color: darkblue;
+  text-decoration: none; }
+.contact-list a:active {
+  color: black;
+  text-decoration: none; }
+
+.contact-item {
+  width: 5%; }
+
+.linkedin:before {
+  font-family: FontAwesome;
+  font-size: 40px;
+  content: "\f08c\ "; }
+
+.mail:before {
+  font-family: FontAwesome;
+  font-size: 40px;
+  content: "\f0e0\ "; }
+
+.github:before {
+  font-family: FontAwesome;
+  font-size: 40px;
+  content: "\f092\ "; }
+
 /*# sourceMappingURL=style.css.map */
-</style></head><body class="flex-container flex-container__centered"><div class="header-image"><!-- img(src="../media/logo.jpg")--></div><div class="content flex-container flex-container__centered"><div class="header"><div class="header-text"><p>Hey, I'm</p><p class="name">Leeran Setton</p><p>DEVELOPER</p></div></div><div class="bio flex-container"><h1 class="heading">Profile</h1><h2 class="subheading divider">I'm a creative backend developer who also knows web development.</h2><div class="bio--content flex-container flex-container__row"><div class="bio-headshot flex-container flex-container__centered"><img class="bio-headshot--img" src="../media/headshot.png"></div><p class="bio--about-me">Starting in the IDF as a software developer in Java and Oracle DB made me grow into backend development. Once I was release from the army, I joined 
+</style></head><body class="flex-container flex-container__centered" onload="init()"><img id="logo" src="../media/logo.jpg"><div class="header-text flex-container flex-container__centered" id="header-text"><p>Hey, I'm</p><p class="name">Leeran Setton</p><p>DEVELOPER</p></div><div class="content flex-container flex-container__centered"><div class="bio flex-container"><h1 class="heading">Profile</h1><h2 class="subheading divider">I'm a creative backend developer who also knows web development.</h2><div class="bio--content flex-container flex-container__row"><div class="bio-headshot flex-container flex-container__centered"><img class="bio-headshot--img" src="../media/headshot.png"></div><p class="bio--about-me">Starting in the IDF as a software developer in Java and Oracle DB made me grow into backend development. Once I was release from the army, I joined 
 an aspiring startup in Israel that was based in Santa Monica, CA. There I started as a backend developer in a scalable, high-availability Java architecture. 
 After a few months, I was asked to help the web team, that's where I learned everything I know today about web development. A year after I started, I was asked to 
 relocate to the Santa Monica office, to which I agreed. 3 Months later I left and joined another company in the porn industry, there I'm a backend engineer working 
 in PHP, JavaScript, NodeJS, GraphQL, and more.</p></div></div><div class="experience flex-container"><h1 class="heading">Experience</h1><h2 class="subheading divider"> "By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; 
 and third by experience, which is the bitterest." </br>
-- Confucius</h2><div class="experience-list flex-container" id="education"><h3 class="experience-list-title">Education</h3><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">Mamram IDF Computer Science Program</h3><p class="time">March 2009 - September 2009</p></div><div class="experience-list-item--what"><h4 class="item-title">Programming course</h4><p class="exp-desc">Studied there basic and progressive programing skills, c++, c#, Java, SQL, security, OS, architecture and design, working in teams, and source control.</p></div></div></div></div><div class="experience flex-container"><div class="experience-list flex-container" id="jobs"><h3 class="experience-list-title">Career</h3><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">IDF</h3><p class="time">November 2009 - October 2012</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Developer</h4><p class="exp-desc"> </p>Designed, Developed and maintained a legacy information system using Java, Oracle SQL, XML, Hibernate and SQL Tuning. I used Oracle Reports and Swing for GUI.
+- Confucius</h2><div class="experience-list flex-container" id="education"><h3 class="list-title">Education</h3><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">Mamram IDF Computer Science Program</h3><p class="time">March 2009 - September 2009</p><p class="location">Israel</p></div><div class="experience-list-item--what"><h4 class="item-title">Programming course</h4><p class="exp-desc">Studied there basic and progressive programing skills, c++, c#, Java, SQL, security, OS, architecture and design, working in teams, and source control.</p></div></div></div></div><div class="experience flex-container"><div class="experience-list flex-container" id="jobs"><h3 class="list-title">Career</h3><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">Israel Defense Forces</h3><p class="time">November 2009 - October 2012</p><p class="location">Israel</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Developer</h4><p class="exp-desc"> </p>Designed, Developed and maintained a legacy information system using Java, Oracle SQL, XML, Hibernate and SQL Tuning. I used Oracle Reports and Swing for GUI.
 As a software developer I worked with a wide variety of people. Starting with My manager and the big development team (5 developers), 
-through our customers, users and architects.</div></div><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">IDF</h3><p class="time">April 2013 - July 2013</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Integrator</h4><p class="exp-desc"> </p>While managing a software development team, I Designed and developed a module in a legacy information system, giving the system new dynamic abilities and by
+through our customers, users and architects.</div></div><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">Israel Defense Forces</h3><p class="time">April 2013 - July 2013</p><p class="location">Israel</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Integrator</h4><p class="exp-desc"> </p>While managing a software development team, I Designed and developed a module in a legacy information system, giving the system new dynamic abilities and by
 that saving a lot of time in future developing. As part of being an integrator, I was in charge of the whole testing phase of a version, and worked along with
-colleague software development team leaders and a QA team leader. We kept track of our progress using CRM and CCB committees I managed.</div></div></div></div></div></body></html>
+colleague software development team leaders and a QA team leader. We kept track of our progress using CRM and CCB committees I managed.</div></div><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">Israel Defense Forces</h3><p class="time">July 2013 - May 2015</p><p class="location">Israel</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Development Team Lead and Developer</h4><p class="exp-desc"> </p>As a software team leader, I managed a software development team that uses Java and C++ on Windows platform. Part of my job was to plan development schedules,
+analyze, make code and design reviews, plan tests, and make sure version control stays as clean as possible. I designed and developed business logic,
+algorithms, and built installations by using a wide variety of hardware using Java and Win32 - LTO, CD, magnetic medias, smart cards and their drives. One
+major project was migrating the systems to Windows 7. In this job I got to work with costumers, users and external companies.</div></div><div class="experience-list-item flex-container flex-container__row"><div class="experience-list-item--where-and-when"><h3 class="place">Whipclip</h3><p class="time">August 2015 - March 2017</p><p class="location">Santa Monica, CA</p></div><div class="experience-list-item--what"><h4 class="item-title">Software Development Team Lead and Developer</h4><p class="exp-desc"> </p>In Whipclip I designed and developed backend and web components using Java and JavaScript (React and Redux). Projects I was solely developing include 
+EPG using TMS api, clipping tool, suppression tool, sharing clips to social networks and content management system. Also used Talend for data fetching 
+and processing. I needed to learn PHP, JavaScript and CSS on the fly. Discover and learn external interfaces and packages both in Java, JavaScript, and 
+PHP. Since Whipclip had 2 offices, one in Israel and another one in Santa Monica, I needed to work with teams in Israel, USA, and France in full 
+cooperation. The persistence solutions we used in Whipclip were RDBMS (PostgreSQL, and MySQL), NoSQL (Redis, and ElasticSearch), and Kafka message bus. 
+The environment ran in Docker on Amazon AWS, and deployed using Jenkins that is connected both to Jira and BitBucket. As a side project, I suggested, 
+designed and developed a Kodi plugin for the company in Python.</div></div></div></div><div class="abillities flex-container"><h1 class="heading">Abillities</h1><h2 class="subheading divider"> "Learning how to learn is life's most important skill." </br>
+- Tony Buzan</h2><div class="abilities-list-section flex-container" id="skills"><h3 class="list-title">Skills</h3><div class="abilities-section flex-container flex-container__row"><ul class="abilities-list flex-container"><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Java</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Javascript</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">React</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Redux</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Object Oriented Design and Programming</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Oracle DB</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">SQL</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">SQL Tuning</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">MySQL</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Oracle PL/SQL</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">GraphQL</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li></ul><ul class="abilities-list flex-container"><li class="abillity-item flex-container flex-container__row"><p class="ability-name">BEM</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">CSS3</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">HTML5</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">ElasticSearch</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Node.js</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">PostgreSQL</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Docker</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Talend</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">PHP</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Android</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star-o"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li></ul></div></div><div class="abilities-list-section flex-container" id="langs"><h3 class="list-title">Languages</h3><div class="abilities-section flex-container flex-container__row"><ul class="abilities-list flex-container"><li class="abillity-item flex-container flex-container__row"><p class="ability-name">English</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li></ul><ul class="abilities-list flex-container"><li class="abillity-item flex-container flex-container__row"><p class="ability-name">Hebrew</p><div class="ability-stars flex-container flex-container__row flex-container__centered"><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i><i class="ability-star fa fa-star"></i></div></li></ul></div></div></div><div class="contact flex-container"><h1 class="heading">Contact</h1><h2 class="subheading divider"> "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed." </br>
+- Carl Jung </h2><div class="contact-section flex-container flex-container__row"><ul class="contact-list flex-container flex-container__row flex-container__centered"><li class="contact-item flex-container"><a class="linkedin" href="https://www.linkedin.com/in/leeran-setton-ba200b77/" target="_blank"></a></li><li class="contact-item flex-container"><a class="github" href="https://github.com/leeransetton" target="_blank"></a></li><li class="contact-item flex-container"><a class="mail" href="mailto:leeransetton@gmail.com" target="_blank"></a></li></ul></div></div></div></body></html>
